@@ -17,7 +17,7 @@ def main(wf):
         url = "http://qr.liantu.com/api.php?text=" + query
         command = 'curl ' + url + ' -o ' + path
         os.system(command)
-
+    
     subtitle = '回车放大二维码'
     wf.add_item(title=query, 
                 subtitle=subtitle,
