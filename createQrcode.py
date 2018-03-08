@@ -1,8 +1,8 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 
 import sys
 import os
-from workflow import Workflow, ICON_WEB
+from workflow import Workflow3
 
 
 def main(wf):
@@ -12,15 +12,15 @@ def main(wf):
     else:
          query = None
 
-    
+    path = "/Users/zhengmin/Pictures/qr.png"
     if query:
         url = "http://qr.liantu.com/api.php?text=" + query
-        command = 'curl ' + url + ' -o /Users/zhengmin/Pictures/qr.png'
+        command = 'curl ' + url + ' -o ' + path
         os.system(command)
 
-    path = "/Users/zhengmin/Pictures/qr.png"
+    subtitle = '回车放大二维码'
     wf.add_item(title=query, 
-                subtitle=query,
+                subtitle=subtitle,
                 icon=path,
                 type="png",
                 valid=True,
@@ -30,5 +30,5 @@ def main(wf):
 
 
 if __name__ == u"__main__":
-    wf = Workflow()
+    wf = Workflow3()
     sys.exit(wf.run(main))

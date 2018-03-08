@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>663DA593-DC7A-46E8-B678-2AE646D46388</string>
+				<string>74CB6FA5-1CA3-44EC-B77D-4C17D1FB0941</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,6 +32,31 @@
 	<string>QRCodeGenerater</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query="{query}"
+
+qlmanage -p  $query</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>74CB6FA5-1CA3-44EC-B77D-4C17D1FB0941</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -75,30 +100,15 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>663DA593-DC7A-46E8-B678-2AE646D46388</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>663DA593-DC7A-46E8-B678-2AE646D46388</key>
+		<key>74CB6FA5-1CA3-44EC-B77D-4C17D1FB0941</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>440</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
