@@ -108,7 +108,7 @@ qlmanage -p  $query</string>
 		<key>74CB6FA5-1CA3-44EC-B77D-4C17D1FB0941</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>360</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>

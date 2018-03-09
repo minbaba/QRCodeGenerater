@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import sys
-import os
+import sys, os
 from workflow import Workflow3
-
+import urllib
 
 def main(wf):
     
@@ -14,7 +13,7 @@ def main(wf):
 
     path = "/Users/zhengmin/Pictures/qr.png"
     if query:
-        url = "http://qr.liantu.com/api.php?text=" + query
+        url = "http://qr.liantu.com/api.php?text=" + urllib.quote(query.encode("utf-8"))
         command = 'curl ' + url + ' -o ' + path
         os.system(command)
     
