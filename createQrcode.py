@@ -11,7 +11,7 @@ def main(wf):
     else:
          query = None
 
-    path = "/Users/zhengmin/Pictures/qr.png"
+    path = "~/Pictures/qr.png"
     if query:
         url = "http://qr.liantu.com/api.php?text=" + urllib.quote(query.encode("utf-8"))
         command = 'curl ' + url + ' -o ' + path
